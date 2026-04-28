@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <group id="odk-managed-catalog" prefer="public">
+    <uri name="http://purl.obolibrary.org/obo/acao/imports/pmdco-main_import.owl" uri="imports/pmdco-main_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/acao/imports/iao_import.owl" uri="imports/iao_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/acao/imports/om-2_import.owl" uri="imports/om-2_import.owl" />
+	<uri name="http://purl.obolibrary.org/obo/acao/core.owl" uri="acao-core.owl" />
   </group>
 </catalog>

@@ -1,0 +1,57 @@
+# centimetre
+http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre
+
+# centimetre per minute
+http://www.ontology-of-units-of-measure.org/resource/om-2/centimetrePerMinute-Time
+
+# centimetre per second
+http://www.ontology-of-units-of-measure.org/resource/om-2/centimetrePerSecond-Time
+
+# degree Celsius
+http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius
+
+# gram
+http://www.ontology-of-units-of-measure.org/resource/om-2/gram
+
+# hour
+http://www.ontology-of-units-of-measure.org/resource/om-2/hour
+
+# kelvin
+http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin
+
+# kilogram
+http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
+
+# litre
+http://www.ontology-of-units-of-measure.org/resource/om-2/litre
+
+# litre per hour
+http://www.ontology-of-units-of-measure.org/resource/om-2/litrePerHour
+
+# metre
+http://www.ontology-of-units-of-measure.org/resource/om-2/metre
+
+# millimetre
+http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre
+
+# minute
+http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Time
+
+# mole
+http://www.ontology-of-units-of-measure.org/resource/om-2/mole
+
+# percent
+http://www.ontology-of-units-of-measure.org/resource/om-2/percent
+
+# second
+http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time
+
+# watt
+http://www.ontology-of-units-of-measure.org/resource/om-2/watt
+
+# mass fraction
+http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction
+
+# volume fraction
+http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction
+

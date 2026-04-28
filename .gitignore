@@ -14,15 +14,15 @@ bin/
 
 .github/token.txt
 
-/ACAO.owl
-/ACAO.obo
-/ACAO.json
-/ACAO.db
-/ACAO-base.*
-/ACAO-basic.*
-/ACAO-full.*
-/ACAO-simple.*
-/ACAO-simple-non-classified.*
+/acao.owl
+/acao.obo
+/acao.json
+/acao.db
+/acao-base.*
+/acao-basic.*
+/acao-full.*
+/acao-simple.*
+/acao-simple-non-classified.*
 /mappings/
 /patterns/
 /reports/
@@ -32,15 +32,15 @@ src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
 !src/ontology/reports/release-diff.md
-src/ontology/ACAO.owl
-src/ontology/ACAO.obo
-src/ontology/ACAO.json
-src/ontology/ACAO.db
-src/ontology/ACAO-base.*
-src/ontology/ACAO-basic.*
-src/ontology/ACAO-full.*
-src/ontology/ACAO-simple.*
-src/ontology/ACAO-simple-non-classified.*
+src/ontology/acao.owl
+src/ontology/acao.obo
+src/ontology/acao.json
+src/ontology/acao.db
+src/ontology/acao-base.*
+src/ontology/acao-basic.*
+src/ontology/acao-full.*
+src/ontology/acao-simple.*
+src/ontology/acao-simple-non-classified.*
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
@@ -48,8 +48,8 @@ src/ontology/ed_definitions_merged.owl
 src/ontology/ontologyterms.txt
 src/ontology/simple_seed.txt
 src/ontology/patterns
-src/ontology/merged-ACAO-edit.owl
-src/ontology/ACAO-edit.properties
+src/ontology/merged-acao-edit.owl
+src/ontology/acao-edit.properties
 
 src/ontology/target/
 src/ontology/tmp/*

@@ -1,7 +1,7 @@
-id: ACAO
+id: acao
 title: "Alloy Casting Ontology"
-github_org: "LOCAL-NOW3"   # can be anything; later it can be your GitLab group
-repo: "ACAO"
+github_org: "kgubaev"   # can be anything; later it can be your GitLab group
+repo: "acao"
 description: "Application ontology for alloy casting based on PMDco3."
 license: "https://creativecommons.org/licenses/by/4.0/"
 export_formats:
@@ -12,3 +12,31 @@ perform_on_ci: false          # you can turn on later if you hook CI
 robot_java_args: "-Xms2G -Xmx4G"
 release_artefacts:
   - base
+import_group:
+  products:
+    - id: pmdco-main
+      mirror_from: "https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/pmdco-full.owl"
+      type: ontology
+      
+    - id: pmdco-subtrees
+      mirror_from: "https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/pmdco-full.owl"
+      type: ontology              # so a mirror target is created and succeeds
+      source: pmdco-main          # <-- extraction will use mirror/pmdco-main.owl
+      module_type: slme
+      module_type_slme: TOP       # seed + all descendants
+      terms: imports/pmdco_subtrees_terms.txt
+      
+    - id: iao
+      mirror_from: "https://raw.githubusercontent.com/information-artifact-ontology/IAO/refs/heads/master/iao.owl"
+      type: ontology              # so a mirror target is created and succeeds
+      source: iao
+      module_type: custom      
+      terms: imports/iao_terms.txt
+        
+    - id: om-2
+      mirror_from: "https://raw.githubusercontent.com/HajoRijgersberg/OM/refs/heads/master/om-2.0.rdf"
+      type: ontology              # so a mirror target is created and succeeds
+      source: om-2
+      module_type: slme
+      module_type_slme: BOT  
+      terms: imports/om_terms.txt

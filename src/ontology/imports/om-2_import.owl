@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontology-of-units-of-measure.org/resource/om-2#"
+     xml:base="http://www.ontology-of-units-of-measure.org/resource/om-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2">
+        <terms:source>https://raw.githubusercontent.com/HajoRijgersberg/OM/refs/heads/master/om-2.0.rdf</terms:source>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePerSecond-Time -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePerSecond-Time"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/UnitDivision -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitDivision"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit"/>
+        <rdfs:label xml:lang="nl">centimeter</rdfs:label>
+        <rdfs:label xml:lang="en">centimetre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/centimetrePerMinute-Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/centimetrePerMinute-Time">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitDivision"/>
+        <rdfs:label xml:lang="nl">centimeter per minuut</rdfs:label>
+        <rdfs:label xml:lang="en">centimetre per minute</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/centimetrePerSecond-Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/centimetrePerSecond-Time">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePerSecond-Time"/>
+        <rdfs:label xml:lang="nl">centimeter per seconde</rdfs:label>
+        <rdfs:label xml:lang="en">centimetre per second</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">degree Celsius</rdfs:label>
+        <rdfs:label xml:lang="nl">graad Celsius</rdfs:label>
+        <rdfs:label xml:lang="zh">摄氏度</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/gram -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/gram">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">gram</rdfs:label>
+        <rdfs:label xml:lang="nl">gram</rdfs:label>
+        <rdfs:label xml:lang="zh">克</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hour -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hour">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">hour</rdfs:label>
+        <rdfs:label xml:lang="nl">uur</rdfs:label>
+        <rdfs:label xml:lang="zh">小时</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">kelvin</rdfs:label>
+        <rdfs:label xml:lang="nl">kelvin</rdfs:label>
+        <rdfs:label xml:lang="zh">开</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit"/>
+        <rdfs:label xml:lang="en">kilogram</rdfs:label>
+        <rdfs:label xml:lang="nl">kilogram</rdfs:label>
+        <rdfs:label xml:lang="zh">公斤</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/litre -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/litre">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="nl">liter</rdfs:label>
+        <rdfs:label xml:lang="en">litre</rdfs:label>
+        <rdfs:label xml:lang="zh">升</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/litrePerHour -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/litrePerHour">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/UnitDivision"/>
+        <rdfs:label xml:lang="nl">liter per uur</rdfs:label>
+        <rdfs:label xml:lang="en">litre per hour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/metre -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="nl">meter</rdfs:label>
+        <rdfs:label xml:lang="en">metre</rdfs:label>
+        <rdfs:label xml:lang="zh">米</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit"/>
+        <rdfs:label xml:lang="nl">millimeter</rdfs:label>
+        <rdfs:label xml:lang="en">millimetre</rdfs:label>
+        <rdfs:label xml:lang="zh">毫米</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Time">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">minute</rdfs:label>
+        <rdfs:label xml:lang="nl">minuut</rdfs:label>
+        <rdfs:label xml:lang="zh">分钟</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/mole -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mole">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="nl">mol</rdfs:label>
+        <rdfs:label xml:lang="en">mole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/percent -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/percent">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">percent</rdfs:label>
+        <rdfs:label xml:lang="nl">procent</rdfs:label>
+        <rdfs:label xml:lang="zh">百分</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">second</rdfs:label>
+        <rdfs:label xml:lang="nl">seconde</rdfs:label>
+        <rdfs:label xml:lang="zh">秒</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/watt -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/watt">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"/>
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">watt</rdfs:label>
+        <rdfs:label xml:lang="nl">watt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction">
+        <rdfs:label xml:lang="en">mass fraction</rdfs:label>
+        <rdfs:label xml:lang="nl">massafractie</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction">
+        <rdfs:label xml:lang="en">volume fraction</rdfs:label>
+        <rdfs:label xml:lang="nl">volumefractie</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
