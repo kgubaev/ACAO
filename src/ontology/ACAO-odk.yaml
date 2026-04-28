@@ -1,0 +1,14 @@
+id: ACAO
+title: "Alloy Casting Ontology"
+github_org: "LOCAL-NOW3"   # can be anything; later it can be your GitLab group
+repo: "ACAO"
+description: "Application ontology for alloy casting based on PMDco3."
+license: "https://creativecommons.org/licenses/by/4.0/"
+export_formats:
+  - owl
+  - obo
+allow_equivalents: all
+perform_on_ci: false          # you can turn on later if you hook CI
+robot_java_args: "-Xms2G -Xmx4G"
+release_artefacts:
+  - base

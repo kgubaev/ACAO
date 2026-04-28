@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ACAO
+
+idspace: ACAO
+base_url: /obo/ACAO
+
+products:
+- ACAO.owl: https://raw.githubusercontent.com/LOCAL-NOW3/seed/main/ACAO.owl
+- ACAO.obo: https://raw.githubusercontent.com/LOCAL-NOW3/seed/main/ACAO.obo
+
+term_browser: ontobee
+example_terms:
+- ACAO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/LOCAL-NOW3/seed/v
+
+- prefix: /tracker/
+  replacement: https://github.com/LOCAL-NOW3/seed/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ACAO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/LOCAL-NOW3/seed/main/
+
