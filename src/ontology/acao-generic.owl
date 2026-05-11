@@ -1,0 +1,190 @@
+Prefix(:=<http://purl.obolibrary.org/obo/acao/generic#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(ACAO:=<http://purl.obolibrary.org/obo/ACAO_>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/acao/generic.owl>
+Import(<http://purl.obolibrary.org/obo/acao/imports/iao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/acao/imports/om-2_import.owl>)
+Import(<http://purl.obolibrary.org/obo/acao/imports/pmdco_import.owl>)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000028>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ACAO_0000021>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ACAO_0000022>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ACAO_0000029>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/ACAO_0000021> (has basis in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000021> "has basis in"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/ACAO_0000021> <http://purl.obolibrary.org/obo/ACAO_0000000>)
+
+# Object Property: <http://purl.obolibrary.org/obo/ACAO_0000022> (stimulated by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000022> "stimulated by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/ACAO_0000022> owl:topObjectProperty)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000000>)
+
+# Object Property: <http://purl.obolibrary.org/obo/ACAO_0000029> (has constitutive material)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000029> "has constitutive material"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000029> "Relates an artifact or other material entity to a portion of matter that is part of it and contributes to its characteristic material constitution, without by itself specifying exact composition or quantitative proportion.")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/ACAO_0000029> <http://purl.obolibrary.org/obo/BFO_0000051>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/ACAO_0000029> <http://purl.obolibrary.org/obo/BFO_0000040>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ACAO_0000029> <https://w3id.org/pmd/co/PMD_0000001>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000000> (process stimulus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000000> "process stimulus"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000000> "A process stimulus is a process that causally initiates, sustains, or modulates another process")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/ACAO_0000000> "combustion of fuel drives vehicle propulsion, cooling of molten metal drives solidification, implementation of a political program drives infrastructure modernization, a stress-hormone spike triggered by a chasing lion induces escape running")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000000> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000001> (physical stimulus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000001> "physical stimulus"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000001> "a process stimulus whose causal efficacy is grounded in physical conditions or physical interactions")
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000021> <http://purl.obolibrary.org/obo/ACAO_0000005>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000001> <http://purl.obolibrary.org/obo/ACAO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000002> (stimulated process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000002> "stimulated process"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000000>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000002> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000004> (usage disposition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000004> "usage disposition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000004> <http://purl.obolibrary.org/obo/BFO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000005> (physical dynamic condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000005> "physical dynamic condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000005> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000006> (inertial condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000006> "inertial condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000006> <http://purl.obolibrary.org/obo/ACAO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000007> (translational inertial condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000007> "translational inertial condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000007> <http://purl.obolibrary.org/obo/ACAO_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000010> (rotational inertial condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000010> "rotational inertial condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000010> <http://purl.obolibrary.org/obo/ACAO_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000011> (field condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000011> "field condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000011> <http://purl.obolibrary.org/obo/ACAO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000012> (conservative field condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000012> "conservative field condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000012> <http://purl.obolibrary.org/obo/ACAO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000013> (non-conservative field gradient condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000013> "non-conservative field gradient condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000013> <http://purl.obolibrary.org/obo/ACAO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000014> (gravity field condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000014> "gravity field condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000014> <http://purl.obolibrary.org/obo/ACAO_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000015> (electrostatic field condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000015> "electrostatic field condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000015> <http://purl.obolibrary.org/obo/ACAO_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000016> (thermodynamic gradient condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000016> "thermodynamic gradient condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000016> <http://purl.obolibrary.org/obo/ACAO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000017> (temperature gradient condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000017> "temperature gradient condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000017> <http://purl.obolibrary.org/obo/ACAO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000018> (pressure gradient condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000018> "pressure gradient condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000018> <http://purl.obolibrary.org/obo/ACAO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000019> (chemical potential gradient condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000019> "chemical potential gradient condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000019> <http://purl.obolibrary.org/obo/ACAO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000020> (concentration gradient condition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000020> "concentration gradient condition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000020> <http://purl.obolibrary.org/obo/ACAO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000023> (single use disposition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000023> "single use disposition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000023> <http://purl.obolibrary.org/obo/ACAO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000024> (multiple use disposition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000024> "multiple use disposition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000024> <http://purl.obolibrary.org/obo/ACAO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000027> (liquid transport)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000027> "liquid transport"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000027> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020246> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000512> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0020118>)))))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000027> <https://w3id.org/pmd/co/PMD_0020246>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000028> (cavity filling process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000028> "cavity filling process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000028> "The process of continuous transport of gas or liquid into the cavity of the solid object, or into otherwise confined place in 3D space (e.g., filling of plasma into the confined magnetic field).")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000028> <https://w3id.org/pmd/co/PMD_0020246>)
+
+
+
+)

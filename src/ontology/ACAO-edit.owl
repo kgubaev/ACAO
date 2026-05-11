@@ -9,7 +9,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/acao.owl>
-Import(<http://purl.obolibrary.org/obo/acao/core.owl>)
+Import(<http://purl.obolibrary.org/obo/acao/casting.owl>)
+Import(<http://purl.obolibrary.org/obo/acao/operational.owl>)
 
 Annotation(dcterms:description "Application ontology for alloy casting based on PMDco3.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)

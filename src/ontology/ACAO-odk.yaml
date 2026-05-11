@@ -14,17 +14,11 @@ release_artefacts:
   - base
 import_group:
   products:
-    - id: pmdco-main
-      mirror_from: "https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/pmdco-full.owl"
-      type: ontology
-      
-    - id: pmdco-subtrees
-      mirror_from: "https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/pmdco-full.owl"
-      type: ontology              # so a mirror target is created and succeeds
-      source: pmdco-main          # <-- extraction will use mirror/pmdco-main.owl
-      module_type: slme
-      module_type_slme: TOP       # seed + all descendants
-      terms: imports/pmdco_subtrees_terms.txt
+    - id: pmdco
+      module_type: mirror
+      mirror_from: "https://materialdigital.github.io/core-ontology/ontology.owl"
+      base_iris:
+        - "https://w3id.org/pmd/co/"
       
     - id: iao
       mirror_from: "https://raw.githubusercontent.com/information-artifact-ontology/IAO/refs/heads/master/iao.owl"

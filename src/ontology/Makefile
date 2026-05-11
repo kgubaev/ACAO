@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                902d2974033593357792a1a1a0f9147041bdf599a9cb15e2ee429ae3ef1affb7
+CONFIG_HASH=                c2fa6eba03349fcef22560e05295f7db5872df0bf077c853cfb4cd4966392398
 
 
 # ----------------------------------------
@@ -141,7 +141,7 @@ $(TMPDIR) $(REPORTDIR) $(MIRRORDIR) $(IMPORTDIR) $(COMPONENTSDIR) $(SUBSETDIR):
 # ----------------------------------------
 
 # Make sure ROBOT knows where to find plugins
-export ROBOT_PLUGINS_DIRECTORY=$(TMPDIR)/plugins
+#export ROBOT_PLUGINS_DIRECTORY=$(TMPDIR)/plugins
 
 # Override this rule in acao.Makefile to install custom plugins
 .PHONY: custom_robot_plugins
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco-main pmdco-subtrees iao om-2
+IMPORTS =  pmdco iao om-2
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -409,22 +409,12 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: pmdco-subtrees (slme)
-$(IMPORTDIR)/pmdco-subtrees_import.owl: $(MIRRORDIR)/pmdco-subtrees.owl $(IMPORTDIR)/pmdco-subtrees_terms.txt $(IMPORTSEED) | all_robot_plugins
+## Module for ontology: pmdco (mirror)
+$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --add-source true \
-		 extract --term-file $(IMPORTDIR)/pmdco-subtrees_terms.txt $(T_IMPORTSEED) \
-		         --copy-ontology-annotations true --force true \
-		         --individuals include \
-		         --method TOP \
-		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
-		        --term rdfs:label \
-		        --term IAO:0000115 \
-		        --term OMO:0002000 \
-		        --term-file $(IMPORTDIR)/pmdco-subtrees_terms.txt $(T_IMPORTSEED) \
-		        --select complement --select annotation-properties \
 		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
 		               --subset-decls true --synonym-decls true \
+		               --add-source true \
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
@@ -467,18 +457,11 @@ no-mirror-refresh-%:
 ifeq ($(MIR),true)
 
 
-## ONTOLOGY: pmdco-main
-.PHONY: mirror-pmdco-main
-.PRECIOUS: $(MIRRORDIR)/pmdco-main.owl
-mirror-pmdco-main: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/pmdco-full.owl -o $(TMPDIR)/$@.owl
-
-
-## ONTOLOGY: pmdco-subtrees
-.PHONY: mirror-pmdco-subtrees
-.PRECIOUS: $(MIRRORDIR)/pmdco-subtrees.owl
-mirror-pmdco-subtrees: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/pmdco-full.owl -o $(TMPDIR)/$@.owl
+## ONTOLOGY: pmdco
+.PHONY: mirror-pmdco
+.PRECIOUS: $(MIRRORDIR)/pmdco.owl
+mirror-pmdco: | $(TMPDIR)
+	$(ROBOT) convert -I https://materialdigital.github.io/core-ontology/ontology.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: iao

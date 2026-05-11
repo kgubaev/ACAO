@@ -1,0 +1,358 @@
+Prefix(:=<http://purl.obolibrary.org/obo/acao/casting#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(ACAO:=<http://purl.obolibrary.org/obo/ACAO_>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/acao/casting.owl>
+Import(<http://purl.obolibrary.org/obo/acao/generic.owl>)
+Import(<http://purl.obolibrary.org/obo/acao/imports/iao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/acao/imports/om-2_import.owl>)
+Import(<http://purl.obolibrary.org/obo/acao/imports/pmdco_import.owl>)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000105>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000108>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000111>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000112>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000114>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000124>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000131>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000136>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000137>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000139>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000142>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000143>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000144>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0000833>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000100> (casting production process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000100> "casting production process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000100> <https://w3id.org/pmd/co/PMD_0000833>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/ACAO_0000102>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/ACAO_0000133>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/ACAO_0000134>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/co/PMD_0000906>))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000101> (mold function)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000101> "mold function"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000101> <http://purl.obolibrary.org/obo/BFO_0000034>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000102> (solidification process)
+
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/ACAO_0000102> "reverse to melting")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/ACAO_0000102> "todo: move to PMD")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000102> "solidification process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000102> <https://w3id.org/pmd/co/PMD_0000547>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000103> (casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000103> "casting mold"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/ACAO_0000104>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000103> <https://w3id.org/pmd/co/PMD_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000104> (casting mold function)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000104> "casting mold function"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000104> <http://purl.obolibrary.org/obo/ACAO_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000105> (continuous casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000105> "ISO 197-4:1983(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000105> "continuous casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000105> "Casting fromed by supplying metal continuously to a mould, and withdrawing it continuously from some other part of the mould as it solidifies, the length being independent of the mould dimensions.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000105> <http://purl.obolibrary.org/obo/ACAO_0000100>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/ACAO_0000117>))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000106> (discrete casting production process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000106> "discrete casting production process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000106> <http://purl.obolibrary.org/obo/ACAO_0000100>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000107> (mold material portion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000107> "mold material portion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000107> "A portion of matter that is part of a casting mold and contributes to the mold’s characteristic material constitution, rather than occurring in or on the mold merely accidentally or incidentally.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000107> <https://w3id.org/pmd/co/PMD_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000108> (sand based mold material portion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000108> "sand based mold material portion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000108> <http://purl.obolibrary.org/obo/ACAO_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000109> (shell mold)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000109> "https://www.britannica.com/technology/shell-mold-casting")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000109> "shell mold"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000109> "A mold formed by the shell-molding process, in which resin-coated sand hardens on a heated metal pattern to form thin, strong mold halves that are then assembled.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000109> <http://purl.obolibrary.org/obo/ACAO_0000135>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000110> (ceramic based mold material portion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000110> "ceramic based mold material portion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000110> <http://purl.obolibrary.org/obo/ACAO_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000111> (plaster based mold material portion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000111> "plaster based mold material portion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000111> <http://purl.obolibrary.org/obo/ACAO_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000112> (metal based mold material portion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000112> "metal based mold material portion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000112> <http://purl.obolibrary.org/obo/ACAO_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000113> (graphite based mold material portion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000113> "graphite based mold material portion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000113> <http://purl.obolibrary.org/obo/ACAO_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000114> (packed granular mold)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000114> "https://www.britannica.com/technology/founding-technology")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000114> "packed granular mold"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000114> "The mold made of materials like sand or clay, that are packed over the face of the pattern (usually made of wood, metal, or resin) to form the cavity into which the molten metal is to be poured. Molds are usually constructed in two halves, and the two halves are joined together once the pattern has been removed from them.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000114> <http://purl.obolibrary.org/obo/ACAO_0000135>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000115> (casting mold cavity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000115> "casting mold cavity"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000115> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ACAO_0000103>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000115> <https://w3id.org/pmd/co/PMD_0020204>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000116> (split die mold)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ACAO_0000116> "A clamped die mold composed of separable parts that form the cavity during die casting and are opened after solidification for ejection of the part")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000116> "https://www.sciencedirect.com/topics/engineering/die-casting")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000116> "split die mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000116> <http://purl.obolibrary.org/obo/ACAO_0000119>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000117> (continous casting mold)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ACAO_0000117> "A short water-cooled mold used in continuous casting, through which the forming shell/strand is continuously withdrawn.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000117> "https://www.britannica.com/technology/steel/Continuous-casting")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000117> "continous casting mold"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/ACAO_0000117> "open-ended mold")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000117> <http://purl.obolibrary.org/obo/ACAO_0000135>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000118> (rotating mold)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000118> "https://www.britannica.com/technology/iron-processing/The-metal")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000118> "rotating mold"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000118> "A mold rotated during centrifugal casting so that the melt is shaped while the mold spins.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000118> <http://purl.obolibrary.org/obo/ACAO_0000135>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000119> (die mold)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ACAO_0000119> "A casting mold used in die casting, into which the liquid metal is injected.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000119> "https://www.britannica.com/technology/die-casting")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000119> "die mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000135>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000120> (die casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000120> "ISO 23472-1:2020(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000120> "die casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000120> "Casting process in which molten metal is injected into a die and held under pressure until complete solidification.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000120> <http://purl.obolibrary.org/obo/ACAO_0000106>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000120> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000018>))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000120> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/ACAO_0000119>))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000121> (permanent mold casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000121> "ISO 3522:2007(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000121> "permanent mold casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000121> "Casting formed in a metal mould, the molten metal being introduced by gravity and solidification under atmospheric pressure.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000121> <http://purl.obolibrary.org/obo/ACAO_0000106>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000014>))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/ACAO_0000137>))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000122> (plaster mold casting production process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000122> "plaster mold casting production process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000122> <http://purl.obolibrary.org/obo/ACAO_0000132>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000122> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000014>))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000122> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000136> <http://purl.obolibrary.org/obo/ACAO_0000142>)))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000123> (investment casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000123> "ISO 19376-1:2025(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000123> "investment casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000123> "Casting process where waxes are embedded into investment and destroyed during dewaxing and burnout to produce near net shaped metal components.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000123> <http://purl.obolibrary.org/obo/ACAO_0000106>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000123> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000014>))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000123> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000109> <http://purl.obolibrary.org/obo/ACAO_0000136>)))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000124> (shell mold casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000124> "ISO 23472-1:2020(en)")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/ACAO_0000124> "Synthetic resin bonded sand shell mold is a thin shell mold made of mixture of raw sand and resin.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000124> "shell mold casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000124> "Casting process in which shell mold made of synthetic resin bonded sand is used")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000124> <http://purl.obolibrary.org/obo/ACAO_0000106>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000014>))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000109> <http://purl.obolibrary.org/obo/ACAO_0000136>)))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000125> (sand casting casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000125> "ISO 23472-1:2020(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000125> "sand casting casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000125> "Casting process in which sand mold is used and molten metal is poured under the action of gravity.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000125> <http://purl.obolibrary.org/obo/ACAO_0000106>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000125> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000014>))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000125> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000114> <http://purl.obolibrary.org/obo/ACAO_0000136> <http://purl.obolibrary.org/obo/ACAO_0000140>)))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000126> (gravity driven continuous casting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000126> "gravity driven continuous casting"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000126> <http://purl.obolibrary.org/obo/ACAO_0000105>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000126> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000014>))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000127> (pressure driven continuous casting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000127> "pressure driven continuous casting"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000127> <http://purl.obolibrary.org/obo/ACAO_0000105>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000128> (centrifugal casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000128> "ISO 23472-1:2020(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000128> "centrifugal casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000128> "Casting process in which molten metal is filled into a mold that rotates around a horizontal or vertical axis and solidifies under the action of centrifugal force to produce castings.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000128> <http://purl.obolibrary.org/obo/ACAO_0000106>)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000010>))))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/ACAO_0000118>))))
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000129> (vertical gravity driven continuous casting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000129> "vertical gravity driven continuous casting"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000129> <http://purl.obolibrary.org/obo/ACAO_0000126>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000130> (horizontal gravity driven continuous casting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000130> "horizontal gravity driven continuous casting"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000130> <http://purl.obolibrary.org/obo/ACAO_0000126>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000131> (pressure die casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000131> "ISO 28401:2024(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000131> "pressure die casting production process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000131> "Die casting where the molten metal is introduced under high pressure.")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000131> <http://purl.obolibrary.org/obo/ACAO_0000120>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000132> (lost foam casting production process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ACAO_0000132> "Casting process which uses expendable pattern for molding. When pouring, high temperature molten metal causes the pattern to burn, gasify and disappear, and fills up the cavity occupied by the pattern at the same time.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ACAO_0000132> "ISO 23472-1:2020(en)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000132> "lost foam casting production process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000132> <http://purl.obolibrary.org/obo/ACAO_0000106>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000133> (casting mold filling process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000133> "casting mold filling process"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000133> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/ACAO_0000115>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000133> <http://purl.obolibrary.org/obo/ACAO_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000134> (liquid transport of metal)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000134> "liquid transport of metal"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000134> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ACAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <https://w3id.org/pmd/co/PMD_0000852>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000134> <http://purl.obolibrary.org/obo/ACAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000135> (construction specified casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000135> "construction specified casting mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000135> <http://purl.obolibrary.org/obo/ACAO_0000103>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000136> (expendable casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000136> "expendable casting mold"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000136> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/ACAO_0000023>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000136> <http://purl.obolibrary.org/obo/ACAO_0000138>)
+DisjointClasses(<http://purl.obolibrary.org/obo/ACAO_0000136> <http://purl.obolibrary.org/obo/ACAO_0000137>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000137> (reusable casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000137> "reusable casting mold"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000137> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/ACAO_0000024>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000137> <http://purl.obolibrary.org/obo/ACAO_0000138>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000138> (persistence specified casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000138> "persistence specified casting mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000138> <http://purl.obolibrary.org/obo/ACAO_0000103>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000139> (material specified casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000139> "material specified casting mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000139> <http://purl.obolibrary.org/obo/ACAO_0000103>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000140> (sand based casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000140> "sand based casting mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000140> <http://purl.obolibrary.org/obo/ACAO_0000139>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000141> (ceramic based casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000141> "ceramic based casting mold"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000029> <http://purl.obolibrary.org/obo/ACAO_0000110>))
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000141> <http://purl.obolibrary.org/obo/ACAO_0000139>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000142> (plaster based casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000142> "plaster based casting mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000142> <http://purl.obolibrary.org/obo/ACAO_0000139>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000143> (metal based casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000143> "metal based casting mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000143> <http://purl.obolibrary.org/obo/ACAO_0000139>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000144> (graphite based casting mold)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000144> "graphite based casting mold"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000144> <http://purl.obolibrary.org/obo/ACAO_0000139>)
+
+
+)
