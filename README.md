@@ -16,13 +16,7 @@ casting ontology, PMDcore3, PMDco3, manufacturing ontology, foundry ontology, se
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/ACAO.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
-
-### Editors' version
-
-Editors of this ontology should use the edit version, [src/ontology/ACAO-edit.owl](src/ontology/ACAO-edit.owl)
+[src/ontology/acao.owl](src/ontology/acao.owl)
 
 ## Contact
 
