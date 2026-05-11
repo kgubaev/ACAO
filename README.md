@@ -16,7 +16,7 @@ casting ontology, PMDcore3, PMDco3, manufacturing ontology, foundry ontology, se
 
 The latest version of the ontology can always be found at:
 
-src/ontology/ACAO-edit.owl](src/ontology/acao.owl)
+[src/ontology/ACAO-edit.owl](src/ontology/acao.owl)
 
 ## Contact
 
