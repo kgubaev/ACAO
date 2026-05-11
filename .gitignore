@@ -42,6 +42,7 @@ src/ontology/patterns
 src/ontology/merged-acao-edit.owl
 src/ontology/acao-edit.properties
 
+src/ontology/*obo
 src/ontology/target/
 src/ontology/tmp/*
 !src/ontology/tmp/.gitkeep

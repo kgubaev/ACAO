@@ -15,6 +15,7 @@ Import(<http://purl.obolibrary.org/obo/acao/imports/pmdco_import.owl>)
 Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ACAO_0000006>))
@@ -87,6 +88,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000001> <http://purl.obolibrary
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000002> "stimulated process"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/ACAO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ACAO_0000022> <http://purl.obolibrary.org/obo/ACAO_0000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000002> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/ACAO_0000003> (solidification process)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/ACAO_0000003> "TODO: move to PMD")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ACAO_0000003> "solidification process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/ACAO_0000003> "reverse of melting process")
+SubClassOf(<http://purl.obolibrary.org/obo/ACAO_0000003> <https://w3id.org/pmd/co/PMD_0000547>)
 
 # Class: <http://purl.obolibrary.org/obo/ACAO_0000004> (usage disposition)
 
