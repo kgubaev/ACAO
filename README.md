@@ -1,6 +1,6 @@
 
 ![Build Status](https://github.com/LOCAL-NOW3/seed/actions/workflows/qc.yml/badge.svg)
-# Alloy Casting Ontology
+# Alloy Casting Application Ontology
 
 Description: Application ontology for alloy casting based on PMDco3.
 
