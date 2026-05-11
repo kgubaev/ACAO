@@ -1,10 +1,14 @@
 
 ![Build Status](https://github.com/LOCAL-NOW3/seed/actions/workflows/qc.yml/badge.svg)
-# Alloy Casting Ontology
+# Alloy Casting Application Ontology
 
-Description: Application ontology for alloy casting based on PMDco3.
+The Application Casting Ontology (ACAO) is a PMDcore3-based ontology for semantic modeling of casting processes, foundry equipment, and operational manufacturing data. It supports structured representation of casting workflows, process parameters, time series, and actual versus planned values through modular ontology design for materials science, manufacturing, and industrial knowledge graphs.The ontology is organized into three modules: 
+ - **generic module** for foundational physical and material concepts
+ - **casting module** for casting-specific processes and equipment
+ - **operational module** for semantically structuring process data such as time series and actual/planned parameter values
 
-More information can be found at http://obofoundry.org/ontology/ACAO
+Keywords:
+casting ontology, PMDcore3, PMDco3, manufacturing ontology, foundry ontology, semantic modeling, process ontology, industrial knowledge graph, operational data ontology, materials science ontology
 
 ## Versions
 
